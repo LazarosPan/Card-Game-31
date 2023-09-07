@@ -57,14 +57,14 @@ class GUICard():
         return out
 
 class CardImages():
-    '''κλάση που δημιουργεί τις εικόνες των φύλλων από srpitesheet'''
+    '''κλάση που δημιουργεί τις εικόνες των φύλλων από sprite sheet'''
     image_file = 'cards2.gif'
     path = '.'
     imagefile = os.path.join(path, image_file)
     images = {}
     @staticmethod
     def generate_card_images():
-        # δημιουργία εικόνων των καρτών 79x123 px από το spritesheet cards2.gif
+        # δημιουργία εικόνων των καρτών 79x123 px από το sprite sheet cards2.gif
         num_sprites = 13
         place = 0
         spritesheet = tk.PhotoImage(file= CardImages.imagefile)
